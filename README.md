@@ -4,7 +4,7 @@
 
 在 DSH 对话里按住 **⌘**（Windows/Linux 为 **Ctrl**）点击文件链接，**跳过右侧预览，直接用系统默认应用打开**。普通点击不变，仍然是右侧 Sidebar 预览。
 
-![普通点击进预览，⌘+点击用系统默认应用打开](docs/demo.png)
+![普通点击进预览，⌘+点击用系统默认应用打开](https://raw.githubusercontent.com/finalrgy/dsh-skip-preview/main/docs/demo.png)
 
 ## 解决什么问题
 
@@ -86,7 +86,7 @@ MIT
 
 Hold **⌘** (**Ctrl** on Windows/Linux) and click a file link in a DSH conversation to **skip the right sidebar preview and open the file with your system default application**. A plain click still previews, exactly as before.
 
-![Plain click previews; ⌘+click opens with the default app](docs/demo.png)
+![Plain click previews; ⌘+click opens with the default app](https://raw.githubusercontent.com/finalrgy/dsh-skip-preview/main/docs/demo.png)
 
 ### Why
 
