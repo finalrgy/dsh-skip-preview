@@ -77,9 +77,9 @@ dsh plugin --profile desktop add github:finalrgy/dsh-skip-preview
 
 ## 维护文档
 
-- [`AGENTS.md`](AGENTS.md) — 维护这个插件必读的上下文（自动注入给新建会话的 agent）
-- [`docs/dsh-plugin-dev.md`](docs/dsh-plugin-dev.md) — DSH 插件开发的通用知识
-- [`docs/decisions.md`](docs/decisions.md) — 决策记录与踩坑
+- [`AGENTS.md`](https://github.com/finalrgy/dsh-skip-preview/blob/main/AGENTS.md) — 维护这个插件必读的上下文（自动注入给新建会话的 agent）
+- [`docs/decisions.md`](docs/decisions.md) — 决策记录与踩坑（随包发布）
+- **DSH 插件开发通用知识** — 在本地 `~/own/20_tools/dsh-plugins/README.md`，所有插件共用，不随本包发布
 
 ## License
 

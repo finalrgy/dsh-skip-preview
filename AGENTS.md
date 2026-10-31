@@ -127,5 +127,5 @@ Ctrl(Win)→原生、⌘(Win)→预览、⌘+Ctrl→预览、Ctrl+Shift(Win)→�
 
 ## 相关文档
 
-- `docs/dsh-plugin-dev.md` — DSH 插件开发的通用知识（写别的插件也用得上）
+- **`../README.md`** — DSH 插件开发通用知识（写别的插件也用得上，已上移到 `dsh-plugins/` 一级）
 - `docs/decisions.md` — 这个插件做过的决策与踩坑记录
