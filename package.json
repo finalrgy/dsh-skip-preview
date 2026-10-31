@@ -1,6 +1,6 @@
 {
   "name": "dsh-skip-preview",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "⌘/Ctrl + 左键点击 DSH 会话里的文件链接，跳过右侧预览、直接用系统默认应用打开 | ⌘/Ctrl+click a file link in DSH chat to skip the sidebar preview and open it with your system default app",
   "keywords": [
     "dsh",
