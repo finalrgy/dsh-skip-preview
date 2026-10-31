@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "⌘-Click to Open Natively",
+    "description": "Hold ⌘ (Ctrl on Windows) and click a file link in the conversation to open it with your system default application; a plain click still previews it in the right sidebar."
+  }
+}
