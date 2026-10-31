@@ -63,6 +63,14 @@ npm publish --userconfig "$TMPRC"; rm -f "$TMPRC"
 - 工作区内相对路径：`session/s1/notes/a.md`
 - 工作区外绝对路径：`session/s1//elsewhere/c.md`（**注意双斜杠**，解析时必须保留前导空段）
 
+**不是所有资源都是文件**。同一方法还处理其他 scheme，解析器只认 `dsh-resource://file/`
+前缀，其余一律放行：
+
+| 地址 | 用途 | 是否接管 |
+|---|---|---|
+| `dsh-resource://file/session/<sid>/<path>` | 打开一个文件 | ✅ |
+| `dsh-resource://changes-review/session/<sid>/<seq>/<turn>` | 打开改动对比页 | ❌ 原样交回 |
+
 **修饰键来源**：`openResource` 只收到地址、拿不到事件，所以在 document 捕获阶段
 （`pointerdown` / `click`）记录按键快照，1 秒 TTL。
 
@@ -88,7 +96,13 @@ npm publish --userconfig "$TMPRC"; rm -f "$TMPRC"
 3. **触发键写死** — 无设置项。
 4. **可发现性为零** — 界面无提示，全靠记忆。
 5. **Windows/Linux 未实测** — 有单测覆盖，没在真机跑过。
-6. **不覆盖交付卡片** — `present` 出来的文件走 `ui-deliverables` 自己的路由。
+6. **不支持改动对比卡片** — 「已编辑 X」那张卡片点开的是**改动对比页**
+   （`dsh-resource://changes-review/…`），不是某个文件。地址里只有
+   `sessionId/seq/turn`，**没有文件名**，一张卡片还可能对应多个文件，
+   所以「⌘ 该打开哪个」没有确定答案。这是刻意不支持，不是遗漏。
+
+   交付卡片（`present` 出来的文件）不同：它走 `openFile` → `openResource`，
+   **⌘ 是有效的**（实测）。
 
 ## 元数据易错点（踩过）
 
@@ -123,9 +137,10 @@ Ctrl(Win)→原生、⌘(Win)→预览、⌘+Ctrl→预览、Ctrl+Shift(Win)→�
       但 awesome-dsh-plugin 的**首页自荐位要求 star > 10**，不够不能提交 PR。
       全量目录（带 `dsh-plugin` topic 自动收录）不受此限，已满足条件等每日刷新。
 - [ ] 缺陷 2（手势单例）未修，仅在 README 声明。
-- [ ] 交付卡片不覆盖，属功能扩展非缺陷。
+- [x] ~~改动对比卡片的 ⌘+点击~~ — 已评估并放弃，理由见「已知限制」第 6 条。
 
 ## 相关文档
 
 - **`../README.md`** — DSH 插件开发通用知识（写别的插件也用得上，已上移到 `dsh-plugins/` 一级）
 - `docs/decisions.md` — 这个插件做过的决策与踩坑记录
+- `docs/rejected-changes-review-click.md` — 评估过但放弃的需求（改动对比卡片的 ⌘+点击）
