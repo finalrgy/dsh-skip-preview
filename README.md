@@ -75,6 +75,12 @@ dsh plugin --profile desktop add github:finalrgy/dsh-skip-preview
 - **Windows/Linux 未实测。** `ctrlKey` 分支有测试覆盖，但没在真实 Windows 环境跑过。
 - **不支持交付卡片。** 见「覆盖范围」。
 
+## 维护文档
+
+- [`AGENTS.md`](AGENTS.md) — 维护这个插件必读的上下文（自动注入给新建会话的 agent）
+- [`docs/dsh-plugin-dev.md`](docs/dsh-plugin-dev.md) — DSH 插件开发的通用知识
+- [`docs/decisions.md`](docs/decisions.md) — 决策记录与踩坑
+
 ## License
 
 MIT
