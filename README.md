@@ -10,7 +10,7 @@
 
 DSH 里对话正文提到的文件，点击后一律进右侧侧边栏预览。这在不少场景下不是想要的结果：
 
-- **侧栏太窄。** 右侧面板宽度基本不可调，长 Markdown、PDF、表格在狭栏里很难读。
+- **小屏幕上侧栏太窄。** 右侧面板宽度可以拖动调整，但它要和主对话区分享屏幕：在笔记本等小屏上，把侧栏拉宽就等于挤掉对话本身，怎么调都别扭。长 Markdown、PDF、表格在这种空间里很难读——把文件交给外部程序，等于借用整个屏幕。
 - **想直接改。** 你本来就打算在编辑器里改它，多一次「先进预览、再点打开」是无谓的一步。
 - **系统程序更合适。** `.md` 用你的编辑器、`.xlsx` 用 Excel / WPS、`.pdf` 用系统预览器——DSH 内置预览只是其中一个选项。
 
@@ -90,7 +90,7 @@ Hold **⌘** (**Ctrl** on Windows/Linux) and click a file link in a DSH conversa
 
 ### Why
 
-DSH opens every file mentioned in chat in the right sidebar. That is often not what you want: the sidebar width is effectively fixed and long Markdown, PDFs or spreadsheets are hard to read in a narrow column. And if you were going to edit the file anyway, the preview is a wasted step. This plugin adds a **parallel exit** rather than replacing the preview.
+DSH opens every file mentioned in chat in the right sidebar. That is often not what you want. The sidebar width is adjustable, but it has to share the screen with the conversation: on a laptop, widening it just squeezes the chat, so no setting feels right. Long Markdown, PDFs and spreadsheets are hard to read in that space — handing the file to an external app borrows the whole screen instead. And if you were going to edit the file anyway, the preview is a wasted step. This plugin adds a **parallel exit** rather than replacing the preview.
 
 ### Behaviour
 
