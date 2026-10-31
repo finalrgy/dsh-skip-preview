@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Skip Preview",
+    "title": "dsh-skip-preview",
     "description": "按住 ⌘（Windows/Linux 为 Ctrl）左键点击会话里的文件链接，跳过右侧预览、直接用系统默认应用打开；普通点击仍然在右侧预览。"
   }
 }

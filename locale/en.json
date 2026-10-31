@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Skip Preview",
+    "title": "dsh-skip-preview",
     "description": "Hold ⌘ (Ctrl on Windows/Linux) and click a file link in the conversation to skip the right sidebar preview and open it with your system default application; a plain click still previews."
   }
 }
